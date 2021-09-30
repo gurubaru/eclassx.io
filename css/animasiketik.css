@@ -1,0 +1,3 @@
+.animasiketik {width: 100%;font-family: 'Courier New', Courier, monospace;white-space: nowrap;overflow: hidden;-webkit-animation: typing 5s steps(70,end);animation: animasi-ketik 5s steps(70,end);}
+@keyframes animasi-ketik{from{width: 0;}}
+@-webkit-keyframes animasi-ketik{from{width: 0;}}
