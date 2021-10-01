@@ -1,0 +1,76 @@
+@media (min-width:700px){
+    body{
+        display: none;
+    }
+}
+a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  nav {
+    width: 300px;
+    position: fixed;
+    top: 10px;
+    left:-300px;
+  }
+  
+  nav .container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0; 
+  }
+  
+  nav .logo-container {
+    /* put Your image or solid color here */
+    background: rgb(167, 146, 146);
+    /* --- */
+    overflow: hidden;
+    z-index: 6;
+  }
+  
+  nav .logo-container a {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 8;
+  }
+  
+  nav .logo-container a:hover img {
+    width: 120%;
+    margin: -10% 0 0 -10%;
+  }
+    
+  nav .logo-container a img {
+    width: 100%;
+    transition: 0.6s;
+  }
+  
+  nav .content-container a {
+    width: 300px;
+    height: 32px;
+    display: block;
+    padding: 12px 0 0 0;
+    margin: 12px 0 0 40px;
+    text-align: right;
+    font-size: 18px;
+    box-shadow: rgb(185, 184, 184) 0px 0px 10px 8px;
+    border-radius: 32px;
+    transition: 0.6s;
+    background-color: #fff;
+  }
+  
+  nav .content-container a i {
+    margin: 0 12px 0 15px;
+  }
+  
+  nav .content-container a:hover {
+    margin-left: 140px;
+  }
