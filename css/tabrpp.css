@@ -7,7 +7,7 @@ ol {
     bottom: 0; /*if you want dropDown, remove "bottom 0" and check below for other three lines that need to be changed*/
     font-size: 12pt;
     height: 2em;
-    line-height: 2em;
+    line-height: 1.5em;
     text-align: center;
   }
   ol a {
@@ -20,7 +20,7 @@ ol {
     position: relative;
     float: left;
     background-color: #2a93a5;
-    width: 200px;
+    width: auto;
     height: 2em;
     transition-duration: 300ms;
   }
@@ -41,7 +41,7 @@ ol {
     margin: 0;
     visibility: hidden;
     position: absolute; /*remove to dropDown*/
-    width: 200px;
+    width: 150px;
     transform: scaleY(0);
     transition: 250ms;
     transform-origin: 50% 100%; /*change 100% to 0 for proper dropDown animation*/
