@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="corner1.css">
+    <link rel="stylesheet" href="papercorner.css">
+    <link rel="stylesheet" href="tabrpp.css">
+    <title>SILABUS BAHASA BALI</title>
+</head>
+<body>
+    <!--tombol samping-->
+    <nav>
+        <div class="container content-container">
+          <a href="index.html">HOME<i class="fa fa-home" aria-hidden="true"></i></a>
+          <a href="tutlenc.html">CREATOR<i class="fa fa-globe" aria-hidden="true"></i></a>
+          <a href="chat.html">INFO<i class="fa fa-info-circle" aria-hidden="true"></i></a>
+          <a href="materi.html">MATERI<i class="fa fa-book" aria-hidden="true"></i></a>
+        </div>
+    </nav>
+    <!--end tombol samping-->
+    <!--paper corner-->
+    <div class="menu">
+        <div class="menu-button">
+          BUKA</br>
+          <i class="material-icons"></i>
+        </div>
+        <div class="menu-off-canvas">
+          <div class="menu-content">
+            <ul class="menu-links">
+              <li><a href="kikd.html">KI dan KD</a></li>
+              <li><a href="silabus.html"></a>Silabus</li>
+              <li><a href="rpp.html">RPP</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <script>
+        var menu = $(".menu");
+var mb = menu.find(".menu-button");
+menu.on("click", function() {
+  $(this).attr("open", true);
+});
+
+mb.on("click", function(e) {
+  menu.removeAttr("open");
+  event.stopPropagation();
+});
+    </script>
+    <!--end paper corner-->
+    <!--tab menu-->
+    <ol>
+        <li><a href="#">Semester Ganjil</a>
+          <ul class="tab__head">
+            <li class="active" rel="tab1"><a>Pidarta Bahasa Bali</a></li>
+            <li rel="tab2"><a>Basa Miwah Aksara Bali</a></li>
+            <li rel="tab3"><a>Tata Basa Bahasa Bali</a></li>
+            <li rel="tab4"><a>Wacana Bahasa Bali</a></li>
+            <li rel="tab5"><a>Widya Tula</a></li>
+          </ul>
+        </li>
+       
+        <li><a href="#">Semester Genap</a>
+          <ul class="tab__head">
+            <li rel="tab6"><a>Kasusastraan Bali</a></li>
+            <li rel="tab7"><a>Puisi Bali</a></li>
+            <li rel="tab8"><a>Prosa Bahasa Bali</a></li>
+            <li rel="tab9"><a>Drama</a></li>
+            <li rel="tab10"><a>Paribasa</a></li>
+          </ul>
+        </li>
+       </ol>
+       <div class="tab__container">
+
+        <div id="tab1" class="tab__content">
+          <h1>ini adalah isi tab 1</h1>
+        </div>
+        <!-- #tab1 -->
+      
+        <div id="tab2" class="tab__content">
+          <h1>ini adalah isi tab 2</h1>
+        </div>
+        <!-- #tab2 -->
+      
+        <div id="tab3" class="tab__content">
+          <h1>ini adalah isi tab 3</h1>
+        </div>
+        <!-- #tab3 -->
+      
+        <div id="tab4" class="tab__content">
+          <h1>ini adalah isi tab 4</h1>
+        </div>
+        <!-- #tab4 --> 
+
+        <div id="tab5" class="tab__content">
+          <h1>ini adalah isi tab 5</h1>
+        </div>
+        <div id="tab6" class="tab__content">
+          <h1>ini adalah isi tab 6</h1>
+        </div>
+        <!-- #tab1 -->
+      
+        <div id="tab7" class="tab__content">
+          <h1>ini adalah isi tab 7</h1>
+        </div>
+        <!-- #tab2 -->
+      
+        <div id="tab8" class="tab__content">
+          <h1>ini adalah isi tab 8</h1>
+        </div>
+        <!-- #tab3 -->
+      
+        <div id="tab9" class="tab__content">
+          <h1>ini adalah isi tab 9</h1>
+        </div>
+        <!-- #tab4 --> 
+
+        <div id="tab10" class="tab__content">
+          <h1>ini adalah isi tab 10</h1>
+        </div>
+      </div>
+    <script>
+        $(".tab__content").hide();
+    $(".tab__content:first").show();
+    $(".tab__head li").click(function() {	
+      $(".tab__content").hide();
+      var activeTab = $(this).attr("rel"); 
+      $("#"+activeTab).fadeIn();		
+      $(".tab__head li").removeClass("active");
+      $(this).addClass("active");	  
+    });	
+    </script>
+    <!--end tab menu-->
+</body>
+</html>
