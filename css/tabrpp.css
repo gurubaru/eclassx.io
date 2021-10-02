@@ -41,7 +41,7 @@ ol {
     margin: 0;
     visibility: hidden;
     position: absolute; /*remove to dropDown*/
-    width: 150px;
+    width: auto;
     transform: scaleY(0);
     transition: 250ms;
     transform-origin: 50% 100%; /*change 100% to 0 for proper dropDown animation*/
