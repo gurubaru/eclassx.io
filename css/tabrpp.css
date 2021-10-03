@@ -1,13 +1,12 @@
 ol {
     display: block;
-    position: fixed;
+    position: relative;
     list-style-type: none;
     padding: 0;
-    margin-bottom: 0px;
-    bottom: 0; /*if you want dropDown, remove "bottom 0" and check below for other three lines that need to be changed*/
+    /*bottom: 0; /*if you want dropDown, remove "bottom 0" and check below for other three lines that need to be changed*/
     font-size: 12pt;
     height: 2em;
-    line-height: 1.5em;
+    line-height: 2em;
     text-align: center;
   }
   ol a {
@@ -40,12 +39,13 @@ ol {
     padding: 0;
     margin: 0;
     visibility: hidden;
-    position: absolute; /*remove to dropDown*/
+    /*position: absolute; /*remove to dropDown*/
     width: auto;
     transform: scaleY(0);
     transition: 250ms;
-    transform-origin: 50% 100%; /*change 100% to 0 for proper dropDown animation*/
+    transform-origin: 50% 0%; /*change 100% to 0 for proper dropDown animation*/
     bottom: 100%;
+    z-index: 99;
   }
   ol > li:hover > ul {
     visibility: visible;
@@ -62,7 +62,7 @@ ol {
     transition-duration: 300ms;
   }
   ol > li > ul > li > a {
-    border-bottom: 1px dashed white; /*in dropUp version change to border-top*/
+    border-top: 1px dashed white; /*in dropUp version change to border-top*/
   }
   ol > li > ul > li:hover {
     background-color: #1a3e68;
