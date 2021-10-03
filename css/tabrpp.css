@@ -19,7 +19,7 @@ ol {
     position: relative;
     float: left;
     background-color: #2a93a5;
-    width: auto;
+    width: 110px;
     height: 2em;
     transition-duration: 300ms;
   }
@@ -40,7 +40,7 @@ ol {
     margin: 0;
     visibility: hidden;
     /*position: absolute; /*remove to dropDown*/
-    width: auto;
+    width: 110px;
     transform: scaleY(0);
     transition: 250ms;
     transform-origin: 50% 0%; /*change 100% to 0 for proper dropDown animation*/
