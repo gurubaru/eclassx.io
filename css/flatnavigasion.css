@@ -47,13 +47,21 @@ nav {
     font-weight: 800;
   }
   nav ul li ul li a {
-    background: #444;
+    background: rgb(120, 120, 121);
     border-left: 4px solid transparent;
     padding: 10px 20px;
   }
   nav ul li ul li a:hover {
-    background: #333;
+    background: rgb(121, 120, 120);
     border-left: 4px solid #3498db;
+  }
+  nav ul li ul li ul li a {
+    background-color: rgb(219, 217, 217);
+    border-left: 10px solid transparent;
+  }
+  nav ul li ul li ul li a:hover {
+    background: rgb(219, 217, 217);
+    border-left: 10px solid rgb(121, 120, 120);
   }
   /* Float Right/Left */
   .right {
