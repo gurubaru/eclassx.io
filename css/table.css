@@ -1,32 +1,9 @@
-table {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #666;
-    text-shadow: 1px 1px 0px #fff;
-    font-size: 10pt;
-  }
-   
-  table th {
-    background: #83adf1;
-    text-align: center;
-    padding: 10px 5px;
-  }
-   
-  table th:first-child{ 
-  }
-   
-  table tr {
-    text-align: center;
-  }
-   
-  table td {
-      background-color: rgb(215, 215, 250);
-      text-shadow: 1px 1px 0px #fff;
-      text-align: left;      
-      padding-left: -15px;
-  }
-  table ol{
-      text-indent: -1.5em;
-  }
+/*--table indikator--*/
+.tableI { font-family: Arial, Helvetica, sans-serif; color: #666; text-shadow: 1px 1px 0px #fff; font-size: 10pt;width: 100%; } 
+.tableI th { background: #83adf1; text-align: center; padding: 10px 5px; } 
+.tableI tr { text-align: center; } 
+.tableI td { background-color: rgb(215, 215, 250); text-shadow: 1px 1px 0px #fff; text-align: left;   padding-left: -15px; } 
+.tableI ol{ text-indent: -1.5em; }
 
   /*--slide tab --*/
 .slick-prev, .slick-next {width: 50px;height: 50px;z-index: 1;top: 30px;}
@@ -48,3 +25,7 @@ table {
 /*---table aksara */
 .tableA {width: 100%;}
 .tableA td{background-color: rgba(236, 236, 236, 0.747);font-family: vimala;padding: 10px 10px;font-size: 14pt;}
+
+/*--tabel percakapan --*/
+.tableD {width: 100%;}
+.tableD td{font-size: 14pt;padding: 3px 5px;}
